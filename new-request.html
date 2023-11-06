@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Request</title>
+    </head>
+    <body>
+        <h1>Submit a new request</h1>
+        <form name="new-request" action="https://eofo7c6v08vm9wi.m.pipedream.net" method="POST">
+            <fieldset>
+                <legend>Your info</legend><br>
+                <label for="request-type-input">Request Type:</label><br>
+                <select id="request-type-input" name="request-type-input" required>
+                    <option value="Type 1">Type 1</option>
+                    <option value="Type 2">Type 2</option>
+                    <option value="Type 3">Type 3</option>
+                    <option value="Type 4">Type 4</option>
+                </select><br><br>
+                <label for="contractor-name-input">Contractor Business Name:</label>
+                <input type="text" id="contractor-name-input" name="contractor-name-input" placeholder="Contractor Name" required><br><br>
+                <label for="file-input">Attachments:</label>
+                <input type="file" id="file-input" name="file-input" required><br><br>
+                <input type="submit" value="Submit"><br>
+            </fieldset>
+        </form>
+        <br><br>
+        <a href="/save progress" alt="save progress">Save Progress</a><br>
+        <a href="/logout" alt="logout">Logout</a><br>
+    </body>
+</html>
